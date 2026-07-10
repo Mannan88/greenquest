@@ -289,25 +289,26 @@ export default function Home() {
                 </p>
               </div>
               <div className="flex gap-3 items-center">
-                <Mail className="size-5 text-[#8DC63F] shrink-0" />
+                <Mail className="size-6 text-[#8DC63F] shrink-0" />
                 <a href="mailto:info@greenquest.in" className="hover:text-[#8DC63F] transition-colors">info@greenquest.in</a>
               </div>
             </div>
 
-            {/*<div className="flex gap-4 mt-8">
-              <a href="https://www.facebook.com/share/1QCNujqr6B/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="size-10 rounded-full border border-white/25 flex items-center justify-center hover:border-[#8DC63F] hover:text-[#8DC63F] transition-colors">
-                <Facebook className="size-4" />
+            <div className="flex gap-4 mt-8 text-white">
+              Social Links
+              <a href="https://www.facebook.com/share/1QCNujqr6B/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="flex items-center justify-center hover:border-[#8DC63F] hover:text-[#8DC63F] transition-colors">
+                <Image src="/facebook-svgrepo-com.svg" alt="Greenquest Logo" height={24} width={24} />
               </a>
-              <span aria-label="LinkedIn, coming soon" className="size-10 rounded-full border border-white/10 flex items-center justify-center text-white/30">
+              {/*<span aria-label="LinkedIn, coming soon" className="size-10 rounded-full border border-white/10 flex items-center justify-center text-white/30">
                 <Linkedin className="size-4" />
-              </span>
-              <span aria-label="X, coming soon" className="size-10 rounded-full border border-white/10 flex items-center justify-center text-white/30">
+              </span>*/}
+              {/*<span aria-label="X, coming soon" className="size-10 rounded-full border border-white/10 flex items-center justify-center text-white/30">
                 <Twitter className="size-4" />
-              </span>
-              <span aria-label="Instagram, coming soon" className="size-10 rounded-full border border-white/10 flex items-center justify-center text-white/30">
+              </span>*/}
+              {/*<span aria-label="Instagram, coming soon" className="size-10 rounded-full border border-white/10 flex items-center justify-center text-white/30">
                 <Instagram className="size-4" />
-              </span>
-            </div>*/}
+              </span>*/}
+            </div>
           </div>
 
           <form className="reveal space-y-4" onSubmit={(e) => e.preventDefault()}>

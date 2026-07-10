@@ -26,7 +26,7 @@ const LOOP_STAGES = [
   { label: "Waste", color: "#6B7B6E" },
   { label: "Biomass", color: "#8DC63F" },
   { label: "Energy", color: "#4CAF50" },
-  { label: "Circular Economy", color: "#14532D" },
+  { label: "Circular Economy", color: "#8DC63F" },
 ];
 
 const SERVICES = [
@@ -136,7 +136,7 @@ export default function Home() {
             </p>
             <div className="hero-reveal flex flex-wrap gap-4">
               <a href="#services" className="px-6 py-3 rounded-full bg-[#8DC63F] text-[#14532D] font-semibold hover:bg-[#9ed456] transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#8DC63F]">
-                Explore our work
+                Explore our services
               </a>
               <a href="#about" className="px-6 py-3 rounded-full border border-white/25 hover:border-white/50 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white/50">
                 Who we are
@@ -145,7 +145,7 @@ export default function Home() {
           </div>
 
           <div className="flex justify-center">
-            <svg viewBox="0 0 400 400" className="w-full max-w-[380px] h-auto" role="img" aria-label="Diagram showing waste flowing through biomass and energy stages into a circular economy">
+            <svg viewBox="0 0 400 400" className="w-full max-w-100 h-auto" role="img" aria-label="Diagram showing waste flowing through biomass and energy stages into a circular economy">
               <g ref={loopRef}>
                 {LOOP_STAGES.map((stage, i) => {
                   const total = LOOP_STAGES.length;
@@ -172,7 +172,7 @@ export default function Home() {
                       <path className="loop-arc" d={`M ${x1} ${y1} A ${r} ${r} 0 ${largeArc} 1 ${x2} ${y2}`} fill="none" stroke={stage.color} strokeWidth={3} strokeLinecap="round" />
                       <circle className="loop-node" cx={nx} cy={ny} r={5} fill={stage.color} />
                       <g className="loop-label-counter" style={{ transformOrigin: "200px 200px" }}>
-                        <text className="loop-label" x={lx} y={ly} textAnchor="middle" dominantBaseline="middle" fill="#FFFFFF" fontFamily="var(--font-mono)" fontSize="11" letterSpacing="0.5">
+                        <text className="loop-label" x={lx} y={ly} textAnchor="middle" dominantBaseline="middle" fill="#FFFFFF" fontFamily="var(--font-mono)" fontSize="16" letterSpacing="0.5">
                           {stage.label}
                         </text>
                       </g>
@@ -180,8 +180,8 @@ export default function Home() {
                   );
                 })}
               </g>
-              <text x="200" y="195" textAnchor="middle" fill="#FFFFFF" fontFamily="var(--font-display)" fontWeight={700} fontSize="22">Value</text>
-              <text x="200" y="216" textAnchor="middle" fill="#8DC63F" fontFamily="var(--font-mono)" fontSize="10" letterSpacing="1">FROM WASTE</text>
+              <text x="200" y="196" textAnchor="middle" fill="#FFFFFF" fontFamily="var(--font-display)" fontWeight={700} fontSize="30">Value</text>
+              <text x="200" y="218" textAnchor="middle" fill="#8DC63F" fontFamily="var(--font-mono)" fontSize="16" letterSpacing="1">FROM WASTE</text>
             </svg>
           </div>
         </div>
@@ -252,7 +252,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Testimonials */}
+      {/* Testimonials
       <section className="px-6 py-16">
         <div className="max-w-6xl mx-auto">
           <p className="reveal font-[family-name:var(--font-mono)] text-xs uppercase tracking-[0.2em] text-[#4CAF50] mb-3">In their words</p>
@@ -268,6 +268,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      */}
 
       {/* Contact and footer */}
       <section id="contact" className="px-6 py-16 bg-[#14532D] text-white">
